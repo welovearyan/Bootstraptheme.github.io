@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>layout 1</title>
+<meta name="viewport" content="width=device-width, intial-scaale=1.0">
+</head>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+.menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.menu a {
+    background-color:rgba(243, 233, 233, 0.603);
+    padding: 7px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
+    border:1px solid black;
+    border-radius: 5px; 
+    text-decoration: none;
+    margin-left: 20px;
+    
+}
+
+.menu :hover{
+ background-color: #fff;
+ text-decoration: none;
+ border: 1px solid;
+ transition: .3s;
+ 
+
+}
+
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:larger;
+    margin-left: 20px;
+}
+
+.right {
+    background-color:rgb(36, 164, 214);
+    color: white;
+    float: left;
+    width: 14%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+@media onlly screen and (max-width:620px) {
+    /* for mobile phones: */
+    .menu, .main, .right {
+
+    }
+}
+</style>
+<body style="font-family: Verdana, Geneva, Tahoma, sans-serif;color: black;">
+<div class="container"
+style="background-color:#4caf50;color:white;padding:15px;font-family: verdana; border-radius: 5px;">
+    <h1>Welcome to My Homepage</h1>
+    <h3 style="font-size: medium;">Use the menu to select different Stylesheets</h3>
+</div>
+<div style="overflow: auto;">
+    <div class="menu">
+        <a href="#" class="active" style="background-color:#4caf50; color: white;">stylesheet 1</a>
+        <a href="#">stylesheet 2</a>
+        <a href="#">stylesheet 3</a>
+        <a href="#">stylesheet 4</a>
+        <a href="#">no stylesheet</a>
+    </div>
+
+    <div class="main">
+       <center> <h2>Same Page Different Stylesheets</h2> </center>
+        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+            Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4. </p>
+
+            <center> <h2>NO STYLES</h2> </center>
+            <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+                No Stylesheet.</p>
+    </div>
+    
+    <div class="right">
+        <h2>side-bar</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi assumenda dolor aliquid quod veniam porro, iusto accusantium pariatur repellat similique. Dolorum, 
+            voluptatem non deleniti delectus possimus eligendi quo iure amet.</p>
+    </div>
+</div>
+
+
+<div style="background-color:rgb(228, 228, 228);border: 1px solid black;border-radius: 4px; text-align:center;padding:8px;margin:3px 3px 3px;">
+
+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br>
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br>
+ Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+  vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+</div>
+</body>
+</html>
